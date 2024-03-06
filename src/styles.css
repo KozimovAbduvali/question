@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply overflow-x-hidden
+  }
+}
+
+.popup-info {
+  @apply pointer-events-none opacity-0
+}
+
+.popup-info.active {
+  @apply pointer-events-auto opacity-100
+}
+
+.filter.active {
+  @apply bg-black/65 z-30
+}
+
+.quiz-section.active {
+  @apply translate-x-0
+}
+
+.option {
+  @apply border border-black/35 rounded-2xl cursor-pointer transition duration-300 md:hover:bg-orange-500 md:hover:border-transparent hover:shadow-lg py-2 px-4
+}
+
+.option.correct {
+  @apply bg-yellow-500 border-transparent
+}
+
+.option.incorrect {
+  @apply bg-red-500 border-transparent
+}

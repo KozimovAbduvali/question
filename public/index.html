@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>quiz</title>
+</head>
+
+<body>
+
+  <header class="w-full fixed top-0 left-0 z-20 bg-slate-200 shadow-lg">
+    <nav class="max-w-7xl flex items-center justify-between gap-5 px-5 mx-auto py-4 md:py-8">
+      <a href="#" class="logo font-bold text-3xl text-orange-500">Quiz.</a>
+      <div class="navbar flex items-center justify-between gap-5">
+        <a href="#" class="activee text-lg font-medium transition-colors text-orange-300">home</a>
+        <a href="#"
+          class="text-lg font-medium transition-colors text-orange-500 duration-300 md:hover:text-orange-300">about</a>
+        <a href="#"
+          class="text-lg font-medium transition-colors text-orange-500 duration-300 md:hover:text-orange-300">services</a>
+        <a href="#"
+          class="text-lg font-medium transition-colors text-orange-500 duration-300 md:hover:text-orange-300">contacts</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="home relative w-full h-screen">
+      <div
+        class="quiz-section fixed top-0 -translate-x-full transition duration-500 ease-out z-50 w-full h-screen bg-black/50 overflow-y-auto pt-10 sm:pt-28">
+        <div class="max-w-2xl mx-auto p-5">
+          <div class="quiz-box w-full bg-white rounded-md shadow-lg p-5">
+            <h2 class="text-center text-2xl lg:text-4xl text-black/50 font-bold">
+              Codehal Quiz
+            </h2>
+            <div class="quiz-header flex justify-between items-center gap-3  text-black/50 font-medium my-3">
+              <span class="text-lg">Quiz Website Tutorials</span>
+              <span
+                class="header-score bg-orange-500 text-white text-sm md:text-lg whitespace-nowrap rounded shadow py-2 px-4">Score:
+                0 /
+                5</span>
+            </div>
+            <h3 class="question-text text-gray-900 text-xl font-semibold mt-5">What does HTML stand for?</h3>
+            <div class="option-list space-y-3 border-t border-black/35 py-5 mt-3">
+              <!-- <div class="option">
+                <span>
+                  A. Hyper Type Multi Language
+                </span>
+              </div> -->
+            </div>
+
+            <div class="quiz-footer text-center border-t border-black/35 pt-3 mt-5">
+              <span class="question-total block text-gray-900 font-medium md:text-lg">
+                1 of 5 Questions
+              </span>
+              <button
+                class="next-btn w-full sm:w-1/2 bg-orange-500 text-white font-semibold transition duration-300 md:hover:shadow-md md:hover:bg-transparent md:hover:border-black/35 border border-transparent md:hover:text-black rounded-2xl mt-2 py-2 px-4 mx-auto">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-content relative z-30 max-w-2xl text-center px-5 pt-28 md:pt-40 mx-auto">
+        <div class="bg-white border rounded-lg shadow-2xl py-8 px-5">
+          <h1 class="text-2xl md:text-3xl lg:text-7xl font-bold">
+            Quiz Website
+          </h1>
+          <p class="mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam porro veritatis mollitia eos vitae
+            blanditiis itaque enim consectetur, a ut adipisci quas voluptates magnam. Beatae quas similique delectus
+          </p>
+          <button
+            class="start-btn w-full sm:w-auto bg-orange-500 text-white font-semibold transition duration-300 md:hover:shadow-md md:hover:bg-orange-300 rounded-lg mt-4 py-2 px-4">
+            Start Quiz
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter w-full h-screen fixed top-0 -z-20 transition-all duration-500 ease-out">
+    </section>
+    <div
+      class="popup-info w-full md:w-[700px] fixed z-40 left-1/2 top-10 md:top-24 lg:top-32 -translate-x-1/2 transition-all duration-500 ease-out overflow-y-auto p-5">
+      <div class="bg-slate-200 shadow-lg rounded-lg p-4">
+        <h2 class="text-xl md:text-4xl lg:text-5xl text-orange-500 font-bold pb-2">Quiz Guide</h2>
+        <span class="info block font-medium text-sm text-orange-500 mt-2">1. Lorem ipsum dolor sit amet consectetur
+          adipisicing.</span>
+        <span class="info block font-medium text-sm text-orange-500 mt-2">2. Lorem ipsum dolor sit amet
+          adipisicing.</span>
+        <span class="info block font-medium text-sm text-orange-500 mt-2">3. Lorem ipsum dolor sit amet
+          consectetur.</span>
+        <span class="info block font-medium text-sm text-orange-500 mt-2">4. Lorem ipsum dolor sit amet consectetur
+          adipi.</span>
+        <span class="info block font-medium text-sm text-orange-500 mt-2">5. Lorem ipsum dolor sit amet consectetur
+          adipisicing.</span>
+
+        <div class="btn-group flex justify-between items-center border-t border-black/35 pt-3 gap-5 mt-5">
+          <button
+            class="info-btn exit-btn bg-orange-500 text-white font-semibold transition duration-300 md:hover:shadow-md md:hover:bg-transparent md:hover:border-black/35 border border-transparent md:hover:text-black rounded mt-2 py-2 px-4">
+            Exit Quiz
+          </button>
+          <a href="#"
+            class="info-btn continue-btn  bg-orange-500 text-white font-semibold transition duration-300 md:hover:shadow-md md:hover:bg-transparent md:hover:border-black/35 border border-transparent md:hover:text-black rounded mt-2 py-2 px-4">Continue</a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/question.js"></script>
+    <script src="./js/app.js"></script>
+  </main>
+</body>
+
+</html>
